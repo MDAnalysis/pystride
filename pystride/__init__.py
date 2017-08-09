@@ -1,1 +1,1 @@
-from .stride import stride
+from .stride import stride, parse_assignments

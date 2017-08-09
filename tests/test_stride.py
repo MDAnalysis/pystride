@@ -25,3 +25,16 @@ def test_stride(ADK, REF_ADK):
         if a.startswith('CHN'):
             continue
         assert a == b
+
+def test_parse_assignments(REF_ADK):
+    assignments = pystride.parse_assignments(REF_ADK)
+
+    asg = assignments[1]
+    assert asg.resname == 'ARG'
+    assert asg.resid == 2
+    assert asg.resnum == 2
+    assert asg.structure_code == 'E'
+    assert asg.structure_name == 'Strand'
+    assert asg.phi == -124.70
+    assert asg.psi == 94.79
+    assert asg.area == 60.7
