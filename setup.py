@@ -10,7 +10,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='stride',
+    name='pystride',
     version='1.0.0',
     description='Python bindings to STRIDE secondary structure analysis',
     long_description=readme,
