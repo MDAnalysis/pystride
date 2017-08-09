@@ -23,8 +23,8 @@ the algorithm.
 About the python bindings:
 
 ```python
-import stride
+import pystride
 
-stride.stride('adk_oplsaa.pdb')
+pystride.stride('adk_oplsaa.pdb')
 
 ```
